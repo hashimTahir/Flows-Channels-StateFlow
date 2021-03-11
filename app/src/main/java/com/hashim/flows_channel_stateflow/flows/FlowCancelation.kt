@@ -18,7 +18,7 @@ on a timeout when running in a withTimeoutOrNull block and stops executing its c
 
 
 
-fun hCancellationFlow(): Flow<Int> = flow {
+private fun hCancellationFlow(): Flow<Int> = flow {
 
     for (i in 1..3) {
         delay(100)
@@ -44,7 +44,7 @@ fun hRunnerForCancellationFlow() = runBlocking {
 /*
 * Only numbers up to 3 and a CancellationException after trying to emit number 4,
 * Crashes at value =4*/
-fun hConditionalCancelation(): Flow<Int> = flow {
+private fun hConditionalCancelation(): Flow<Int> = flow {
     for (i in 1..5) {
         Timber.d("Emitting $i")
         emit(i)

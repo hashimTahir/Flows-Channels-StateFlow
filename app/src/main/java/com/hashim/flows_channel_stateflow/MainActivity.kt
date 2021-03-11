@@ -6,7 +6,7 @@ package com.hashim.flows_channel_stateflow
 
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
-import com.hashim.flows_channel_stateflow.flows.hRunnerForCondiationalCancelation
+import com.hashim.flows_channel_stateflow.flows.hRunnerForTerminalOperator
 import kotlinx.coroutines.InternalCoroutinesApi
 
 @InternalCoroutinesApi
@@ -20,8 +20,13 @@ class MainActivity : AppCompatActivity() {
 //        hRunnerForNonUiThreadBlocking()
 //        hRunnerForFlow()
 //        hRunnerForCancellationFlow()
-        hRunnerForCondiationalCancelation()
+//        hRunnerForCondiationalCancelation()
+//        hRunnerForMapIntToString()
+//        hRunnerForTransform()
+//        hRunnerForLimitOperator()
+        hRunnerForTerminalOperator()
     }
+
 }
 
 

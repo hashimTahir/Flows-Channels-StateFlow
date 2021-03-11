@@ -17,7 +17,7 @@ import timber.log.Timber
 /*
    * This computation blocks the main thread that is running the code.
    * */
-fun ThreadBlockingBlock(): Sequence<Int> = sequence {
+private fun ThreadBlockingBlock(): Sequence<Int> = sequence {
     for (i in 1..3) {
         Thread.sleep(1000)
         yield(i)
@@ -30,7 +30,7 @@ fun hRunnerForThreadBlockingBlock() {
 }
 //////////////////////////////////////////////////////////////////////////////////////////////
 
-suspend fun NonUiThreadBlocking(): List<Int> {
+private suspend fun NonUiThreadBlocking(): List<Int> {
     delay(1000) // pretend we are doing something asynchronous here
     return listOf(1, 2, 3)
 }
@@ -71,7 +71,7 @@ Values are collected from the flow using collect function.
 * The flow starts every time it is collected, that is why we see "Flow started" when we call collect again.
 *
 * */
-fun hCreateFlow(): Flow<Int> = flow { // flow builder
+private fun hCreateFlow(): Flow<Int> = flow { // flow builder
     for (i in 1..3) {
         delay(2000) // pretend we are doing something useful here
         emit(i) // emit next value
