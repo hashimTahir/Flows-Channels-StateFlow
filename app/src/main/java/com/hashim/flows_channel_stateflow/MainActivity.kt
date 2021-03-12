@@ -6,7 +6,7 @@ package com.hashim.flows_channel_stateflow
 
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
-import com.hashim.flows_channel_stateflow.flows.hRunnerForTerminalOperator
+import com.hashim.flows_channel_stateflow.flows.hRunnerForFlowOnToSwitchThread
 import kotlinx.coroutines.InternalCoroutinesApi
 
 @InternalCoroutinesApi
@@ -24,7 +24,10 @@ class MainActivity : AppCompatActivity() {
 //        hRunnerForMapIntToString()
 //        hRunnerForTransform()
 //        hRunnerForLimitOperator()
-        hRunnerForTerminalOperator()
+//        hRunnerForTerminalOperator()
+//        hRunnerForFlowsThreadName()
+//        hRunnerForWrongEmission()
+        hRunnerForFlowOnToSwitchThread()
     }
 
 }
