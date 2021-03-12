@@ -41,8 +41,14 @@ fun hRunnerForCancellationFlow() = runBlocking {
 
 //////////////////////////////////////////////////////////////////////////////
 
+
+
+
+
+
+
 /*
-* Only numbers up to 3 and a CancellationException after trying to emit number 4,
+* Only prints numbers up to 3 and a CancellationException after trying to emit number 4,
 * Crashes at value =4*/
 private fun hConditionalCancelation(): Flow<Int> = flow {
     for (i in 1..5) {
@@ -58,9 +64,18 @@ fun hRunnerForCondiationalCancelation() = runBlocking {
     }
 }
 
+//////////////////////////////////////////////////////////////////////////////
+
+
+
+
+
+
+
+
 
 /*
-* Most other flow operators do not do additional cancellation checks on
+* Mostly other flow operators do not do additional cancellation checks on
 * their own for performance reasons. For example, if IntRange.asFlow is used as extension
 *  to write the same busy loop and don't suspend anywhere, then there are no checks
 * for cancellation:
@@ -75,6 +90,12 @@ fun hRunnerForRangeCancellation() = runBlocking<Unit> {
     }
 }
 //////////////////////////////////////////////////////////////////////////////////
+
+
+
+
+
+
 
 
 /*In the case of a busy loop with coroutines, explicit

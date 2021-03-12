@@ -78,6 +78,14 @@ fun hRunnerForWrongEmission() = runBlocking {
 /*
 *FlowOn Operator is used to change the context
 *The correct way to change the context of a flow is as follows,
+*
+*
+* The FlowOn operator has changed
+* the default sequential nature of the flow. Now collection happens in one
+*  coroutine and emission happens in another coroutine
+* that is running in another thread concurrently with the
+*  collecting coroutine. The flowOn operator creates another coroutine for
+*  an upstream flow when it has to change the CoroutineDispatcher in its context.
 * */
 
 fun hFlowOnToSwitchThread(): Flow<Int> = flow {

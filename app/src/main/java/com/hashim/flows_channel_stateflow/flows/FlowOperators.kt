@@ -66,9 +66,16 @@ fun hRunnerForTransform() = runBlocking {
 }
 
 ///////////////////////////////////////////////////////////////////////////////////
+
+
+
+
+
+
+
 /*
 *            Size-limiting operators﻿
-* Size-limiting intermediate operators like take cancel the execution of the flow when the
+* Size-limiting intermediate operators, cancel the execution of the flow when the
 * corresponding limit is reached. Cancellation in coroutines is always performed by throwing an
 * exception, so that all the resource-management functions (like try { ... } finally { ... } blocks)
 * operate normally in case of cancellation.
@@ -91,13 +98,25 @@ fun hRunnerForLimitOperator() = runBlocking {
         }
 }
 
+//////////////////////////////////////////////////////////////////////////////
+
+
+
+
+
+
 
 /*
 * Terminal flow operators﻿
 * Terminal operators on flows are suspending functions that start a
-* collection of the flow. The collect operator is the most basic one,
+* collection of the flow. The collect operator is the most basic one.
+*
+*
 * Conversion to various collections like toList and toSet.
+*
 * Operators to get the first value and to ensure that a flow emits a single value.
+*
+*
 * Reducing a flow to a value with reduce and fold.
 * */
 

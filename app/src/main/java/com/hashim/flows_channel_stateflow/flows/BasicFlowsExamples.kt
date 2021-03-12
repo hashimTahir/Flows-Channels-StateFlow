@@ -42,33 +42,28 @@ fun hRunnerForNonUiThreadBlocking() = runBlocking<Unit> {
 
 
 /*
-* Using the List<Int> result type, means we can only return all the values at once.
+* Using the List<Int> result type, means all the values are returned at once.
 *  To represent the stream of values that are being asynchronously computed,
-* we can use a Flow<Int> type just like we would use the Sequence<Int>
-type for synchronously computed values:
+* Flow<Int> type is used
 * This code waits 2000ms before printing each number without blocking the main thread.
 * */
 
 
 /*
 *     A builder function for Flow type is called flow.
-
-Code inside the flow { ... } builder block can suspend.
-
-The simple function is no longer marked with suspend modifier.
-
-Values are emitted from the flow using emit function.
-
-Values are collected from the flow using collect function.
+* Code inside the flow { ... } builder block can suspend.
+* The simple function is no longer marked with suspend modifier.
+* Values are emitted from the flow using emit function.
+* Values are collected from the flow using collect function.
 *
 * Flows are cold streams similar to sequences — the code inside a flow builder
 * does not run until the flow is collected.
 *
 *
-*
-* This is a key reason the simple function (which returns a flow) is not marked with suspend modifier.
-*  By itself, simple() call returns quickly and does not wait for anything.
-* The flow starts every time it is collected, that is why we see "Flow started" when we call collect again.
+* This is a key reason the hCreateFlow function (which returns a flow) is not marked with suspend modifier.
+*  By itself, hCreateFlow() call returns quickly and does not wait for anything.
+* The flow starts every time it is collected, that is why,
+*  "Flow started" is printed again when its collected agian.
 *
 * */
 private fun hCreateFlow(): Flow<Int> = flow { // flow builder
