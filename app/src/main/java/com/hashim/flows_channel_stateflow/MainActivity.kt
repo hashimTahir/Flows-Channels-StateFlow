@@ -6,7 +6,7 @@ package com.hashim.flows_channel_stateflow
 
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
-import com.hashim.flows_channel_stateflow.flows.hRunnerBufferFlow
+import com.hashim.flows_channel_stateflow.flows.hRunnerForCollectLatestFlow
 import kotlinx.coroutines.InternalCoroutinesApi
 
 @InternalCoroutinesApi
@@ -29,7 +29,9 @@ class MainActivity : AppCompatActivity() {
 //        hRunnerForWrongEmission()
 //        hRunnerForFlowOnToSwitchThread()
 //        hRunnerTimeForExecution()
-        hRunnerBufferFlow()
+//        hRunnerBufferFlow()
+//        hRunnerForConflateFlow()
+        hRunnerForCollectLatestFlow()
     }
 
 
