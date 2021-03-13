@@ -44,7 +44,7 @@ fun hRunnerForConflateFlow() = runBlocking {
 //////////////////////////////////////////////////////////////////////////////////
 
 
-/*Processing the latest value﻿
+/*Processing the latest value
 *Conflation is one way to speed up processing when both the emitter and collector are slow.
 *  It does it by dropping emitted values. The other way is to cancel a slow collector and
 * restart it every time a new value is emitted. There is a family of xxxLatest operators
