@@ -11,7 +11,7 @@ import kotlinx.coroutines.runBlocking
 import timber.log.Timber
 
 /*
-* Composing multiple flows﻿
+* Composing multiple flows
 * There are lots of ways to compose multiple flows.
 * Like the Sequence.zip extension function in the Kotlin standard library,
 *  flows have a zip operator that combines the corresponding values of two flows:
@@ -35,7 +35,7 @@ fun hRunnerForZipFlow() = runBlocking {
 
 
 /*
-* Combine﻿
+* Combine
 * When flow represents the most recent value of a variable or operation,
 *  it might be needed to perform a computation that depends on the most recent
 *  values of the corresponding flows and to recompute it whenever any of the upstream

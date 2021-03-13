@@ -6,8 +6,9 @@ package com.hashim.flows_channel_stateflow
 
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
-import com.hashim.flows_channel_stateflow.flows.hRunnerForCombineFlow
-import com.hashim.flows_channel_stateflow.flows.hRunnerForZipFlow
+import com.hashim.flows_channel_stateflow.flows.hRunnerForConcatFlatFlow
+import com.hashim.flows_channel_stateflow.flows.hRunnerForLatestFlatFlow
+import com.hashim.flows_channel_stateflow.flows.hRunnerForMergeFlatFlow
 import kotlinx.coroutines.InternalCoroutinesApi
 
 @InternalCoroutinesApi
@@ -35,7 +36,10 @@ class MainActivity : AppCompatActivity() {
 //        hRunnerForCollectLatestFlow()
 //        hRunnerForZipFlow()
 
-        hRunnerForCombineFlow()
+//        hRunnerForCombineFlow()
+//        hRunnerForConcatFlatFlow()
+        hRunnerForMergeFlatFlow()
+        hRunnerForLatestFlatFlow()
     }
 
 
