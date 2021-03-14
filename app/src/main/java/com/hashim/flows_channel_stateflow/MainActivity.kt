@@ -6,7 +6,8 @@ package com.hashim.flows_channel_stateflow
 
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
-import com.hashim.flows_channel_stateflow.flows.hRunnerForDeclarativeException
+import com.hashim.flows_channel_stateflow.flows.hRunnerEmitExceptionFlow
+import com.hashim.flows_channel_stateflow.flows.hRunnerSuccessfulCompletion
 import kotlinx.coroutines.InternalCoroutinesApi
 
 @InternalCoroutinesApi
@@ -39,7 +40,11 @@ class MainActivity : AppCompatActivity() {
 //        hRunnerForMergeFlatFlow()
 //        hRunnerForLatestFlatFlow()
 //        hRunnerForCatchOperator()
-        hRunnerForDeclarativeException()
+//        hRunnerForDeclarativeException()
+//        hRunnerImperativeFlowCompletion()
+//        hRunnerDeclarativeFlowCompletion()
+//        hRunnerEmitExceptionFlow()
+        hRunnerSuccessfulCompletion()
     }
 
 
