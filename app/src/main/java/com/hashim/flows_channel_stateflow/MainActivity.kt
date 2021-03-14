@@ -6,8 +6,6 @@ package com.hashim.flows_channel_stateflow
 
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
-import com.hashim.flows_channel_stateflow.flows.hRunnerEmitExceptionFlow
-import com.hashim.flows_channel_stateflow.flows.hRunnerSuccessfulCompletion
 import kotlinx.coroutines.InternalCoroutinesApi
 
 @InternalCoroutinesApi
@@ -15,36 +13,7 @@ class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
-
-
-//        hRunnerForThreadBlockingBlock()
-//        hRunnerForNonUiThreadBlocking()
-//        hRunnerForFlow()
-//        hRunnerForCancellationFlow()
-//        hRunnerForCondiationalCancelation()
-//        hRunnerForMapIntToString()
-//        hRunnerForTransform()
-//        hRunnerForLimitOperator()
-//        hRunnerForTerminalOperator()
-//        hRunnerForFlowsThreadName()
-//        hRunnerForWrongEmission()
-//        hRunnerForFlowOnToSwitchThread()
-//        hRunnerTimeForExecution()
-//        hRunnerBufferFlow()
-//        hRunnerForConflateFlow()
-//        hRunnerForCollectLatestFlow()
-//        hRunnerForZipFlow()
-
-//        hRunnerForCombineFlow()
-//        hRunnerForConcatFlatFlow()
-//        hRunnerForMergeFlatFlow()
-//        hRunnerForLatestFlatFlow()
-//        hRunnerForCatchOperator()
-//        hRunnerForDeclarativeException()
-//        hRunnerImperativeFlowCompletion()
-//        hRunnerDeclarativeFlowCompletion()
-//        hRunnerEmitExceptionFlow()
-        hRunnerSuccessfulCompletion()
+//   Note: Use any extenstion functions from any files to test the code.
     }
 
 
