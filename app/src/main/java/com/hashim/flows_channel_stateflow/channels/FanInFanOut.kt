@@ -64,7 +64,7 @@ fun hRunnerForFanOut() = runBlocking {
 ////////////////////////////////////////////////////////////////////////////////////////
 
 /*
-* Fan-in﻿
+* Fan-in
 * Multiple coroutines may send to the same channel. For example, A channel of strings,
 *  and a suspending function that repeatedly sends a specified string to this channel with a specified delay:
 * */
