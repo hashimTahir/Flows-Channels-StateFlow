@@ -66,8 +66,13 @@ fun hRunChannelWithClosed() = GlobalScope.launch {
 }
 
 
+
+
+
+
+////////////////////////////////////////////////////////////////////////////////////////////
 /*
-* Building channel producers﻿
+* Building channel producers
 * The pattern where a coroutine is producing a sequence of elements is quite common.
 * This is a part of producer-consumer pattern that is often found in concurrent code.
 * Such a producer can be abstracted out into a function that takes channel as its parameter,
