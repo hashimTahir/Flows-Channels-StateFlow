@@ -6,6 +6,7 @@ package com.hashim.flows_channel_stateflow
 
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
+import com.hashim.flows_channel_stateflow.channels.hRunChannelWithProducer
 import kotlinx.coroutines.InternalCoroutinesApi
 
 @InternalCoroutinesApi
@@ -14,6 +15,11 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 //   Note: Use any extenstion functions from any files to test the code.
+
+
+//        hRunBasicChannel()
+//        hRunChannelWithClosed()
+        hRunChannelWithProducer()
     }
 
 
