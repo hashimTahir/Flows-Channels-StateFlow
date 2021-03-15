@@ -6,8 +6,8 @@ package com.hashim.flows_channel_stateflow
 
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
-import com.hashim.flows_channel_stateflow.channels.hPrimePipelineRunner
-import com.hashim.flows_channel_stateflow.channels.hRunnerForThePipeLine
+import com.hashim.flows_channel_stateflow.channels.hRunnerForFanIn
+import com.hashim.flows_channel_stateflow.channels.hRunnerForFanOut
 import kotlinx.coroutines.InternalCoroutinesApi
 
 @InternalCoroutinesApi
@@ -23,7 +23,9 @@ class MainActivity : AppCompatActivity() {
 //        hRunChannelWithProducer()
 
 //        hRunnerForThePipeLine()
-        hPrimePipelineRunner()
+//        hPrimePipelineRunner()
+//        hRunnerForFanOut()
+        hRunnerForFanIn()
     }
 
 
